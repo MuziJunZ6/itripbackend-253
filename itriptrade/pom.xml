@@ -33,6 +33,15 @@
         </dependency>
 
 
+      <!--支付宝的jar包-->
+        <dependency>
+            <groupId>cn.itrip.alipay</groupId>
+            <artifactId>itrip-alipay</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>

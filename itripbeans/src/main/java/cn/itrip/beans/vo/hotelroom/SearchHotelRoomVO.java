@@ -1,4 +1,5 @@
 package cn.itrip.beans.vo.hotelroom;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -6,12 +7,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- *
  * 前端输入-查询酒店房间搜索条件VO
  * Created by XX on 17-5-11.
  */
-@ApiModel(value = "SearchHotelRoomVO",description = "查询酒店房间的VO")
-public class SearchHotelRoomVO implements Serializable{
+@ApiModel(value = "SearchHotelRoomVO", description = "查询酒店房间的VO")
+public class SearchHotelRoomVO implements Serializable {
 
     @ApiModelProperty("[必填] 酒店ID")
     private Long hotelId;
