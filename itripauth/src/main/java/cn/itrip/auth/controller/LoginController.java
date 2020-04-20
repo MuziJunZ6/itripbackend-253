@@ -33,7 +33,7 @@ public class LoginController {
     @Resource
     private UserService userService;
 
-    @RequestMapping(value = "/dologin" , method = RequestMethod.POST)
+    @RequestMapping(value = "/dologin", method = RequestMethod.POST)
     @ResponseBody
     public Dto login(@RequestParam String name, @RequestParam String password, HttpServletRequest request) {
         try {
@@ -65,7 +65,7 @@ public class LoginController {
     /**
      * 退出
      */
-    @RequestMapping(value="/logout", method = RequestMethod.GET,headers = "token")
+    @RequestMapping(value = "/logout", method = RequestMethod.GET, headers = "token")
     @ResponseBody
     public Dto logout(HttpServletRequest request) {
         String token = request.getHeader("token");
@@ -79,7 +79,7 @@ public class LoginController {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            return DtoUtil.returnFail("退出失败",ErrorCode.AUTH_TOKEN_INVALID);
+            return DtoUtil.returnFail("退出失败", ErrorCode.AUTH_TOKEN_INVALID);
         }
     }
 
